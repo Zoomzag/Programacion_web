@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Biblioteca leo</title>
+    <style type = "text/css">
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+
+        ul, ol {
+            list-style: none;
+        }
+
+        .nav li a{
+            background-color: blueviolet;
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+        }
+        .nav li a:hover{
+            background-color:rgb(124, 105, 122);
+        }
+
+        .nav>li {
+            float: left;
+        }
+
+        .nav li ul{
+            display:none;
+            position: absolute;
+            min-width: 140px;
+        }
+
+        .nav li:hover > ul{
+            display: block;
+        }
+    </style>
+
+    <link rel="stylesheet" href="letra.css">
+</head>
+<body>
+    <h1>Biblioteca leo</h1>
+
+    <h3>Nombre del libro:</h3>
+    <label for="nombre"></label>
+    <input type="text" id = nombre name="nombre" required>
+    <br><br>
+    
+    <h3>Nombre del autor:</h3>
+    <label for="autor"></label>
+    <input type="text" id = autor name="autor" required>
+    <br><br>
+
+    <h3>Fecha de publicacion:</h3>
+
+    <input type="date" name="" id="">
+    <br><br>
+
+    <h3>Ayudenos seleccionado lo siguente para una mejor experiencia de busquea:</h3>
+    <div id="header">
+        <ul class="nav">
+            <li> <a href="">Genero</a>   <ul>
+                <li> <a href="">terror</a> </li>
+                <li> <a href="">ciencia ficcion</a> </li>
+                <li> <a href="">fantasia medieval</a> </li>
+                <li> <a href="">cyberpunk</a> </li>
+                <li> <a href="">accion</a> </li>
+                <li> <a href="">aventura</a> </li>
+                <li> <a href="">romance</a> </li>
+                <li> <a href="">comedia</a> </li>
+            </ul>
+         </li>
+         <li><a href="">Orden</a> <ul>
+                <li> <a href="">por fecha de publicacion</a> </li>
+                <li> <a href="">por alfabeto </a> </li>
+                <li> <a href="">por popularidad</a> </li>
+                <li> <a href="">por color</a> </li>
+         </ul>
+        </li>
+        </ul>
+    </div>
+    <br><br>
+    <br><br>
+
+    <h3>Ayudenos calificando su experiencia:</h3>
+    <p>calidad del producto:</p>
+    <label><input type="radio" name="calidad" value="muy malo" required></label>
+    <label><input type="radio" name="calidad" value="muy malo" required></label>
+    <label><input type="radio" name="calidad" value="muy malo" required></label>
+    <label><input type="radio" name="calidad" value="muy malo" required></label>
+    <label><input type="radio" name="calidad" value="muy malo" required></label>
+    <br><br>
+
+    <p>tiempo de entrega</p>
+    <label><input type="radio" name="tiempo" value="muy malo" required></label>
+    <label><input type="radio" name="tiempo" value="muy malo" required></label>
+    <label><input type="radio" name="tiempo" value="muy malo" required></label>
+    <label><input type="radio" name="tiempo" value="muy malo" required></label>
+    <label><input type="radio" name="tiempo" value="muy malo" required></label>
+    <br><br>
+
+    <p>gracias por su tiempo :) </p>
+</body>
+
+</html>

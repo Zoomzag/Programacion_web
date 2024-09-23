@@ -1,0 +1,8 @@
+
+@font-face {
+    font-family: fuenterandom;
+    src: url(JacquardaBastarda9-Regular.ttf);
+}
+body{
+    font-family: fuenterandom;
+}
